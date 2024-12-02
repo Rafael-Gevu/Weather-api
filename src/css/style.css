@@ -1,0 +1,217 @@
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background-color: aliceblue;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sun-cloud-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 150px;
+    width: 400px;
+}
+.sun-icon{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: -1;
+    
+    top: 20px;
+}
+
+.cloud-icon-1{
+    width: 150px;
+    height: 100px;
+    animation: cloudleft 5s infinite  ease-in-out;
+}
+.cloud-icon-2{
+    width: 150px;
+    height: 100px;
+    animation: cloudright 5s infinite ease-in-out;
+}
+@-webkit-keyframes cloudleft{
+    0% {
+        -webkit-transform: translateX(1em);
+    }
+
+    100% {
+        -webkit-transform: translateX(-1em);
+        
+    }
+}
+@-webkit-keyframes cloudright{
+    0% {
+        -webkit-transform: translateX(-1em);
+    }
+
+    100% {
+        -webkit-transform: translateX(1em);
+        
+    }
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-container{
+    width: 240px;
+    height: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    background-color: #fff;  
+}
+
+.fas.fa-map-marker-alt{
+    font-size: 20px;
+}
+
+#search-input{
+    border: none;
+    border-radius: 20px;
+    padding-left: 8px;
+    width: 240px;
+    font-size: 16px;
+}
+
+.fa-solid.fa-magnifying-glass{
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    line-height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    right: 0;
+    cursor: pointer;
+    background-color: #0093E9;
+    background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.error-message{
+   margin-top: 3px;
+   width: 240px;
+   padding-left: 20px;
+   font-size: 11px;
+   opacity: 0;
+   color:  hsl(0, 100%, 66%);
+}
+
+.remove-opacity{
+    opacity:1;
+}
+.current-city{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-current-temperature{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 23px;
+    padding-right:10px ;
+    background-color: #0093E9;
+    background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+    width: 300px;
+    height: 120px;
+    color: #fff;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.container-current-temperature img{
+    height: 110px;
+    width: 110px;
+    border: none;
+}
+
+.temp-max-container, .temp-min-container, .wind-container, .humidity-container{
+    width: 150px;
+    height: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.temp-min-temp-max{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.wind-humidity{
+    display: flex;
+    gap: 40px;
+}
+
+.fa-solid.fa-temperature-high{
+    color:  hsl(0, 100%, 66%);
+    font-size: 20px;
+}
+
+.fa-solid.fa-temperature-low{
+    color:  #0093E9;
+    font-size: 20px;
+}
+
+.fa-solid.fa-droplet{
+    color:  #0093E9;   
+    font-size: 20px;
+}
+
+.fa-solid.fa-wind{
+    font-size: 20px;
+}
+
+.feels-like-container{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    width: 340px;
+    margin-top: 20px;
+    height: 60px;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.feels-like{
+    font-size: 30px;
+    padding-right: 26px;
+}
+
+.display-none {
+    display: none;
+}

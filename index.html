@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/font-awesome.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sun-cloud-icon">
+            <img class="cloud-icon-1" src="src/images/cloud-1.png" alt="cloud-icon">
+            <img class="cloud-icon-2" src="src/images/cloud-2.png" alt="cloud-icon">
+            <img class="sun-icon" src="src/images/sun.png" alt="sun-icon">
+        </div>
+        <form id="search">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="input-container">
+                <input type="search" name="city-name" id="search-input" placeholder="Busque uma cidade">
+                <i class="search-btn fa-solid fa-magnifying-glass"></i>
+            </div>
+
+        </form>
+    <div class="weather-info display-none">
+        <h2 class="current-city"></h2>
+        <div class="container-current-temperature">
+            <img class="weather-icon"  alt="">
+            <h1 class="current-temperature"></h1>
+        </div>
+        <div class="temp-min-temp-max">
+
+            <div class="temp-max-container">
+                <div class="temp-max-icon"><i class="fa-solid fa-temperature-high"></i></div>
+                <div class="temp-max-info">
+                    <p class="temp-max-title">Temp. max</p>
+                    <p class="temp-max"></p>
+                </div>
+            </div>
+
+            <div class="temp-min-container">
+                <div class="temp-min-icon"><i class="fa-solid fa-temperature-low"></i></div>
+                <div class="temp-min-info">
+                    <p class="temp-min-title">Temp. min</p>
+                    <p class="temp-min"></p>
+                </div>                    
+            </div>
+        </div>
+        <div class="wind-humidity">
+
+            <div class="wind-container">
+                <div class="wind-icon"><i class="fa-solid fa-wind"></i></div>
+                <div class="wind-info">
+                    <p class="wind-title">Vento</p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+
+            <div class="humidity-container">
+                <div class="humidity-icon"><i class="fa-solid fa-droplet"></i></div>
+                <div class="humidity-info">
+                    <p class="humidity-title">Humidade</p>
+                    <p class="humidity"></p>
+                </div>
+            </div>
+        </div>
+        <div class="feels-like-container">
+            <p class="feels-like-title">Sensação térmica</p>
+            <p class="feels-like"></p>
+        </div>
+        <p class="error-message">Digite um nome válido de cidade</p>
+    
+    </div>
+    </div>
+    <script type="module" src="src/js/index.js"></script>
+</body>
+
+</html>
