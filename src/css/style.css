@@ -35,38 +35,35 @@ body{
     z-index: -1;
     
     top: 20px;
+    animation: sunrise 5s infinite alternate-reverse ease-in-out; 
 }
 
 .cloud-icon-1{
     width: 150px;
     height: 100px;
-    animation: cloudleft 5s infinite  ease-in-out;
+    position:absolute;
+    right:70px;
+    
 }
 .cloud-icon-2{
     width: 150px;
     height: 100px;
-    animation: cloudright 5s infinite ease-in-out;
+    position: absolute;
+    left: 70px;
+    
 }
-@-webkit-keyframes cloudleft{
+
+@-webkit-keyframes sunrise{
     0% {
-        -webkit-transform: translateX(1em);
+        -webkit-transform: translateY(-2em);
     }
 
     100% {
-        -webkit-transform: translateX(-1em);
+        -webkit-transform: translateY(0em);
         
     }
 }
-@-webkit-keyframes cloudright{
-    0% {
-        -webkit-transform: translateX(-1em);
-    }
 
-    100% {
-        -webkit-transform: translateX(1em);
-        
-    }
-}
 
 #search{
     display: flex;
