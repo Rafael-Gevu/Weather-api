@@ -9,6 +9,7 @@ const weatherIcon = document.querySelector('.weather-icon')
 
 const feelsLike = document.querySelector('.feels-like')
 const weatherInfo = document.querySelector('.weather-info')
+const errorMessage = document.querySelector('.error-message')
 searchBtn.addEventListener('click', function(){
     const cityName = document.querySelector('#search-input').value
     weatherInfo.classList.remove('display-none')
@@ -17,7 +18,10 @@ searchBtn.addEventListener('click', function(){
      const baseUrl =`https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(cityName)}&appid=${apiKey}&units=metric&lang=pt_br`;
      const response = await fetch(baseUrl)
      const data = await response.json()
-     console.log(data)
+     if(data.cod != 200){
+        weatherInfo.classList.add('display-none')
+        errorMessage.classList.add('remove-opacity')
+     } 
      currentCity.innerHTML = `${data.name}, ${data.sys.country}`
      currentTemperature.innerHTML = `${data.main.temp.toFixed(1).toString().replace('.',',')} <sup>Cº</sup> `
      tempMax.innerHTML = `${data.main.temp_max.toFixed(1).toString().replace('.',',')} <sup>Cº</sup> `
@@ -26,10 +30,22 @@ searchBtn.addEventListener('click', function(){
      wind.innerHTML = `${data.wind.speed.toFixed(1)}km/h`
      humidity.innerHTML = `${data.main.humidity}%`
      feelsLike.innerHTML = `${data.main.feels_like.toFixed(1).toString().replace('.',',')} <sup>Cº</sup> `
- }
- 
-getData()
+     }
+
+
+     
+     if (cityName === "" ){
+        errorMessage.classList.add('remove-opacity')
+        weatherInfo.classList.add('display-none')
+    } else {
+    errorMessage.classList.remove('remove-opacity')
+    getData()
+    }    
 })
+
+
+
+
 
 
 
