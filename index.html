@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="src/css/font-awesome.css">
+    <link rel="stylesheet" href="./src/css/font-awesome.css">
 </head>
 
 <body>
     <div class="container">
         <div class="sun-cloud-icon">
-            <img class="cloud-icon-1" src="src/images/cloud-1.png" alt="cloud-icon">
-            <img class="cloud-icon-2" src="src/images/cloud-2.png" alt="cloud-icon">
-            <img class="sun-icon" src="src/images/sun.png" alt="sun-icon">
+            <img class="cloud-icon-1" src="./src/images/cloud-1.png" alt="cloud-icon">
+            <img class="cloud-icon-2" src="./src/images/cloud-2.png" alt="cloud-icon">
+            <img class="sun-icon" src="./src/images/sun.png" alt="sun-icon">
         </div>
         <form id="search">
             <i class="fas fa-map-marker-alt"></i>
@@ -34,14 +34,13 @@
         <h2 class="current-city"></h2>
         <div class="container-current-temperature">
 
-            <img class="weather-icon"  alt="">
+            <img class="weather-icon"  alt="weather-icon">
             <div class="current-temp-description">
                 <h1 class="current-temperature"></h1> 
                 <p class="description"></p>
             </div>
         </div>
         <div class="temp-min-temp-max">
-
             <div class="temp-max-container">
                 <div class="temp-max-icon"><i class="fa-solid fa-temperature-high"></i></div>
                 <div class="temp-max-info">
@@ -83,7 +82,7 @@
     </div>
     <p class="error-message">Digite um nome válido de cidade</p>
     </div>
-    <script type="module" src="src/js/index.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
 </body>
 
 </html>
