@@ -97,12 +97,13 @@ body{
     font-size: 16px;
 }
 
-.fa-solid.fa-magnifying-glass{
+.submit-btn{
     position: absolute;
     height: 40px;
     width: 50px;
     text-align: center;
     line-height: 40px;
+    border: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     right: 0;
@@ -129,7 +130,6 @@ body{
 }
 
 .container-current-temperature{
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,7 +150,9 @@ body{
     width: 110px;
     border: none;
 }
-
+.description{
+    font-size: 16px;
+}
 .temp-max-container, .temp-min-container, .wind-container, .humidity-container{
     width: 150px;
     height: 70px;
