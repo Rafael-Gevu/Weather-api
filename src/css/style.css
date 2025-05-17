@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #0093E9;
     background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
     height: 100vh;
@@ -7,8 +7,7 @@ body{
     align-items: center;
 }
 
-
-.container{
+.container {
     background-color: aliceblue;
     width: 380px;
     display: flex;
@@ -19,7 +18,17 @@ body{
     padding: 2%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.sun-cloud-icon{
+
+.logo {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sun-cloud-icon {
     position: relative;
     display: flex;
     justify-content: center;
@@ -28,50 +37,52 @@ body{
     height: 150px;
     width: 400px;
 }
-.sun-icon{
+
+.sun-icon {
     width: 70px;
     height: 70px;
     position: absolute;
     z-index: -1;
-    
+
     top: 20px;
-    animation: sunrise 5s infinite alternate-reverse ease-in-out; 
+    animation: sunrise 5s infinite alternate-reverse ease-in-out;
 }
 
-.cloud-icon-1{
+.cloud-icon-1 {
     width: 150px;
     height: 100px;
-    position:absolute;
-    right:70px;
-    
+    position: absolute;
+    right: 70px;
+
 }
-.cloud-icon-2{
+
+.cloud-icon-2 {
     width: 150px;
     height: 100px;
     position: absolute;
     left: 70px;
-    
+
 }
 
-@-webkit-keyframes sunrise{
+@-webkit-keyframes sunrise {
     0% {
         -webkit-transform: translateY(-2em);
     }
 
     100% {
         -webkit-transform: translateY(0em);
-        
+
     }
 }
 
 
-#search{
+#search {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.input-container{
+.input-container {
     width: 240px;
     height: 40px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -79,14 +90,14 @@ body{
     border-radius: 20px;
     display: flex;
     position: relative;
-    background-color: #fff;  
+    background-color: #fff;
 }
 
-.fas.fa-map-marker-alt{
+.fas.fa-map-marker-alt {
     font-size: 20px;
 }
 
-#search-input{
+#search-input {
     border: none;
     border-radius: 20px;
     padding-left: 8px;
@@ -94,7 +105,7 @@ body{
     font-size: 16px;
 }
 
-.submit-btn{
+.submit-btn {
     position: absolute;
     height: 40px;
     width: 50px;
@@ -109,30 +120,30 @@ body{
     background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
 }
 
-.error-message{
-   margin-top: 3px;
-   width: 240px;
-   padding-left: 20px;
-   font-size: 11px;
-   opacity: 0;
-   color:  hsl(0, 100%, 66%);
+.error-message {
+    margin-top: 3px;
+    width: 240px;
+    padding-left: 20px;
+    font-size: 11px;
+    opacity: 0;
+    color: hsl(0, 100%, 66%);
 }
 
-.remove-opacity{
-    opacity:1;
+.remove-opacity {
+    opacity: 1;
 }
-.current-city{
+
+.current-city {
     margin-top: 20px;
     text-align: center;
 }
 
-.container-current-temperature{
+.container-current-temperature {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     font-size: 23px;
-    padding-right:10px ;
+    padding-right: 10px;
     background-color: #0093E9;
     background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
     width: 300px;
@@ -142,15 +153,20 @@ body{
     margin: 20px auto;
 }
 
-.container-current-temperature img{
+.container-current-temperature img {
     height: 110px;
     width: 110px;
     border: none;
 }
-.description{
+
+.description {
     font-size: 16px;
 }
-.temp-max-container, .temp-min-container, .wind-container, .humidity-container{
+
+.temp-max-container,
+.temp-min-container,
+.wind-container,
+.humidity-container {
     width: 150px;
     height: 70px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -162,37 +178,37 @@ body{
     background-color: #fff;
 }
 
-.temp-min-temp-max{
+.temp-min-temp-max {
     display: flex;
     gap: 40px;
     margin-bottom: 20px;
 }
 
-.wind-humidity{
+.wind-humidity {
     display: flex;
     gap: 40px;
 }
 
-.fa-solid.fa-temperature-high{
-    color:  hsl(0, 100%, 66%);
+.fa-solid.fa-temperature-high {
+    color: hsl(0, 100%, 66%);
     font-size: 20px;
 }
 
-.fa-solid.fa-temperature-low{
-    color:  #0093E9;
+.fa-solid.fa-temperature-low {
+    color: #0093E9;
     font-size: 20px;
 }
 
-.fa-solid.fa-droplet{
-    color:  #0093E9;   
+.fa-solid.fa-droplet {
+    color: #0093E9;
     font-size: 20px;
 }
 
-.fa-solid.fa-wind{
+.fa-solid.fa-wind {
     font-size: 20px;
 }
 
-.feels-like-container{
+.feels-like-container {
     display: flex;
     justify-content: space-between;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -206,7 +222,7 @@ body{
     font-size: 18px;
 }
 
-.feels-like{
+.feels-like {
     font-size: 30px;
     padding-right: 26px;
 }

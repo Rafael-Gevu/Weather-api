@@ -24,7 +24,7 @@ form.addEventListener('submit', function(event){
         weatherInfo.classList.add('display-none')
         errorMessage.classList.add('remove-opacity')
      } 
-     console.log(data)
+     
      currentCity.innerHTML = `${data.name}, ${data.sys.country}`
      currentTemperature.innerHTML = `${data.main.temp.toFixed(1).toString().replace('.',',')} <sup>Cº</sup> `
      description.innerHTML = `${data.weather[0].description}`
@@ -47,6 +47,8 @@ form.addEventListener('submit', function(event){
     getData()
     }    
 })
+
+
 
 
 
