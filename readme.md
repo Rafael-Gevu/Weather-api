@@ -47,10 +47,8 @@ Rafael Gevú
 Um site responsivo que recomenda filmes para o usuário com base no seu humor.
 
 ### Capturas de tela
-<img src="./src/images/main-page-screenshot.png" width="500" alt="main-page-screenshot">
-<img src="./src/images/filtered-page-screenshot.png" width="500" alt="filtered-page-screenshot">
-<img src="./src/images/single-page-screenshot.png" width="500" alt="single-page-screenshot">
-<img src="./src/images/responsive-single-page-screenshot.png" alt="responsive-single-page-screenshot" width="300">
+<img src="./src/images/feels-like-main-page-screenshot.png" width="500" alt="main-page-screenshot">
+<img src="./src/images/feels-like-search-screenshot.png" width="500" alt="search-screenshot">
 
 ### Funcionalidades
 Em um menu animado, os usuários podem pesquisar o nome de uma cidade e visualizar informações climáticas, incluindo temperatura máxima, temperatura mínima, velocidade do vento, umidade e sensação térmica.
